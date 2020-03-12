@@ -4,5 +4,5 @@ public class AppStart1 {
 		Person s=new Student("hgd","Computer");
 		System.out.println(s);
 		s.show();
-	}
+	} 
 }
