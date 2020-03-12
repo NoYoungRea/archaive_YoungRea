@@ -13,4 +13,8 @@ public class Student extends Person{
 	public String getMajor() {
 		return major;
 	}
+	public String toString() {
+		return ("name;"+name+",major :"+major);
+	}
+	public void show() {}
 }
