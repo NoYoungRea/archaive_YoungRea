@@ -1,5 +1,5 @@
-# archaive_YoungRea
-유용한 command
+
+#유용한 command
 git remote remove origin
 git remote add origin https://github.com/계정/리포지토리
 컨트롤 쉬프트 f
