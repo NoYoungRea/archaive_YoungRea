@@ -5,6 +5,7 @@
 2. git remote add origin https://github.com/계정/리포지토리
 3. 컨트롤 쉬프트 f
 4. git rm --cached <file>
+5. git fetch origin 을 하면 remote로 부터 내거를 최신 동기화 할 수 있다. 이 다음 git merge origin/master master을 통해 나의 master을 위로 쭉 올려준다.
 
 리터럴 상수를 직접사용하는 것을 하드코딩이라고 함
 -----------------------------------
