@@ -7,7 +7,7 @@ public class AppStart {
 		
 		City c=City.BUSAN;   //이게 훨신 더 직관 적임
 		int num=Subject.KOR;
-		
+
 		System.out.println(c.getKm());
 		System.out.println(c.compareTo(City.SEOUL));
 		System.out.println(num);
