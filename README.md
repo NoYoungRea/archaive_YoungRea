@@ -1,14 +1,15 @@
 
 유용한 command
 ----------------
-git remote remove origin
-git remote add origin https://github.com/계정/리포지토리
-컨트롤 쉬프트 f
+1. git remote remove origin
+2. git remote add origin https://github.com/계정/리포지토리
+3. 컨트롤 쉬프트 f
+4. git rm --cached <file>
 
 리터럴 상수를 직접사용하는 것을 하드코딩이라고 함
-
+-----------------------------------
 Doc에서 final로 된거을 구별하는 법은 다 대문자로 되어 있음
-
+-------------------------------------------
 final
 ----------
 private int managerName=0; 이렇게 해 놓으면, 생성자가 먼저 호출 되기 때문에 사전에 초기화 시켜 놓은 값은 없어져 버림 즉, 의미 없음
