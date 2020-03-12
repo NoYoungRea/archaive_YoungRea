@@ -1,8 +1,16 @@
 
 public class Student extends Person{
-	public Student() {
-		super("hgd");
-		System.out.println("student maker is called");
+	private String major;
+	
+	public Student(String name, String major) {
+		super(name);
+		this.major=major;
 	}
 	
+	public void setMajor(String major) {
+		this.major=major;
+	}
+	public String getMajor() {
+		return major;
+	}
 }
