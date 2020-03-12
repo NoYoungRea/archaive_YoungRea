@@ -6,6 +6,8 @@ public class Student extends Person{
 	}
 	
 	public Student(int n) {
-		
+		name="Hgd";
+		this.name="sss";
+		super.name="ada";
 	}
 }
