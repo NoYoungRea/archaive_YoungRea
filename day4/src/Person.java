@@ -1,5 +1,5 @@
 
-public final class Person extends Object{
+public class Person extends Object{
 	protected String name;
 	public Person(String name) {
 		this.name=name;
@@ -14,8 +14,6 @@ public final class Person extends Object{
 	public String toString() {
 		return ("name:"+name);
 	}
-	protected final void show() {
-		
-	}
+
 
 }
