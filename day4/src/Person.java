@@ -14,6 +14,9 @@ public class Person extends Object{
 	public String toString() {
 		return ("name:"+name);
 	}
-
+	public void show()
+	{
+		System.out.println("call show()");
+	}
 
 }
