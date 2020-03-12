@@ -14,5 +14,11 @@ public class Person extends Object{
 	public String toString() {
 		return ("name:"+name);
 	}
+	public final void show() {
+		
+	}
+	public final static void showinfo() {
+		
+	}
 
 }
