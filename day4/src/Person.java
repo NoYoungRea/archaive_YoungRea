@@ -1,5 +1,5 @@
 
-public class Person extends Object{
+public final class Person extends Object{
 	protected String name;
 	public Person(String name) {
 		this.name=name;

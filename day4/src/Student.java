@@ -16,11 +16,6 @@ public class Student extends Person{
 	public String toString() {
 		return (super.toString()+"major :"+major);
 	}
-	public void show() {
-		
-	}
-	public static void showinfo() {
-		
-	}
+
 
 }
