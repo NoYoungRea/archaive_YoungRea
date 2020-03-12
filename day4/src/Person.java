@@ -12,7 +12,7 @@ public class Person extends Object{
 		return name;
 	}
 	public String toString() {
-		return ("name:"+"name");
+		return ("name:"+name);
 	}
-	protected void Show() {}
+
 }
