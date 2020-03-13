@@ -13,11 +13,12 @@ public abstract class Beverage {
 	public void setPrice(int price) {
 		this.price=price;
 	}
-	public void Creat() {
+	public void Creat(boolean addCondiment) {
 		boilWater();
 		brew();
 		pourInCup();
-		addCondiment();
+		if(addCondiment)
+		{addCondiment();}
 	}
 	public String getName() {return name;}
 	public int getPrice() {return price;}

@@ -1,6 +1,6 @@
 
 public class Shop {
-	public Beverage order(String name) {
+	public Beverage order(String name,boolean addCondiment) {
 		Beverage beverage=null;
 		switch(name) {
 		case "Coffee":
@@ -14,7 +14,7 @@ public class Shop {
 		}
 		if(beverage !=null) {
 
-			beverage.Creat();
+			beverage.Creat(addCondiment);
 		}
 		else {
 			System.out.println(name+"x");
