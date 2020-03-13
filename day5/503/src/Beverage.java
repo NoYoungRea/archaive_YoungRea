@@ -13,6 +13,12 @@ public abstract class Beverage {
 	public void setPrice(int price) {
 		this.price=price;
 	}
+	public void Creat() {
+		boilWater();
+		brew();
+		pourInCup();
+		addCondiment();
+	}
 	public String getName() {return name;}
 	public int getPrice() {return price;}
 	public void boilWater() {

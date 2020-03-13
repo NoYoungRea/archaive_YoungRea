@@ -13,11 +13,8 @@ public class Shop {
 			break;
 		}
 		if(beverage !=null) {
-			beverage.boilWater();
-			beverage.brew();
-			beverage.pourInCup();
-			beverage.addCondiment();
-			
+
+			beverage.Creat();
 		}
 		else {
 			System.out.println(name+"x");
