@@ -1,9 +1,13 @@
-
+interface Fightable{
+	public abstract void fight();
+}
 public class AppStart {
 	public static void main(String[] args) {
-		Runable d=new Duck();
-		
-		if(d instanceof Flyable)
-			((Flyable)d).fly();
+		Fightable fighter=new Fightable() {
+			public void fight() {
+				System.out.println("x");
+			}
+		};
+		fighter.fight();
 	}
 }
