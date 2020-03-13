@@ -9,8 +9,11 @@ public class AppStart {
 			public void cry() {
 				System.out.println("x");
 			}
+			public void fight() {
+				cry();
+			}
 		};
-		fighter.cry();
+
 		fighter.fight();
 	}
 }
