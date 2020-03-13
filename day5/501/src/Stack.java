@@ -1,22 +1,21 @@
 
 public class Stack {
-	private int[] members;
+	private IntBox members=null;
 	private int top;
 	
-	public Stack(int size) {
-		members=new int[size];
+	public Stack() {
 		top=0;
 	}
 	public void push(int value) {
-		if(top>=members.length) {
-			int[]tmp=new int[members.length+10];
-			System.arraycopy(members, 0, tmp, 0, members.length);
-			members=tmp;
-		}
-		members[top++]=value;
+
+		members=new IntBox(value,members);
+		
 	}
 	public int pop() {
-		return members[--top];
+		top--;
+		int tmp=members.getData();
+		members=members.getNextBox();
+		return tmp;
 	}
 	public int getSize() {
 		return top;
