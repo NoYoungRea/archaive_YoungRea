@@ -1,5 +1,7 @@
-interface Fightable{
-	public abstract void fight();
+ class Fightable{
+	public  void fight() {
+		
+	};
 }
 public class AppStart {
 	public static void main(String[] args) {
