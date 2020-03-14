@@ -3,7 +3,8 @@ public class StaticDisplayer extends Observer {
 
 	WeatherData wd;
 	
-	public StaticDisplayer(WeatherData wd) {
+	public void setWeatherData(WeatherData wd) {
+	
 		this.wd=wd;
 	}
 	

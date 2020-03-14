@@ -10,6 +10,7 @@ public class WeatherData extends Subject{
 		observer=new Observer[10];
 	}
 	public void addObserver(Observer o) {
+		o.setWeatherData(this);
 		if(count<observer.length) {
 			observer[count++]=o;
 		}

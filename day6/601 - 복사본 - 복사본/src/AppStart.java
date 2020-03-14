@@ -2,7 +2,7 @@
 public class AppStart {
 	public static void main(String[] args) {
 		WeatherData wc=new WeatherData();
-		Observer sd=new StaticDisplayer(wc);
+		Observer sd=new StaticDisplayer();
 		wc.addObserver(sd);
 		wc.setTemp(13);
 		wc.setHumi(20);
