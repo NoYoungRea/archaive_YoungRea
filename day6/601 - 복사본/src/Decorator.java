@@ -1,16 +1,26 @@
 
-public abstract class Decorator extends Beverage{
+public abstract class Decorator extends Beverage {
 	protected Beverage beverage;
-	
+
 	public Decorator(Beverage beverage, String name, int cost) {
-		super(name,cost);
-		this.beverage=beverage;
+		super(name, cost);
+		this.beverage = beverage;
 	}
+
 	public String getName() {
-		
-		return beverage.getName()+", "+name;
+		if (beverage != null) {
+			return beverage.getName() + "," + name;
+		}
+
+		return name;
 	}
+
 	public int getCost() {
-		return beverage.getCost()+cost;
+
+		if (beverage != null) {
+
+			return beverage.getCost() + cost;
+		}
+		return cost;
 	}
 }
