@@ -12,6 +12,9 @@ public class AppStart {
 		Pizza cheesePizza=store.order(CheesePizza.NAME);
 		System.out.println(cheesePizza.getDescript());
 		
-
+		
+		store.setFactory(new NewPizzaHutFactory());
+		Pizza unionPizza=store.order(UnionPizza.NAME);
+		System.out.println(unionPizza.getDescript());
 	}
 }
