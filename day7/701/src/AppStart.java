@@ -7,11 +7,14 @@ public class AppStart {
 		int value=0;
 		
 		try {
+			System.out.println("file open");
+			System.out.println("file using");
 			value=a/b;
 		}
 		catch(ArithmeticException e) {
-			value=-1;
+			return -1;
 		}
+		System.out.println("file close");
 		return value;
 	}
 	public static void main(String[] args) {
