@@ -1,24 +1,28 @@
-
+import java.io.FileInputStream;
+import java.io.IOException;
 
 public class AppStart {
-	public static int func() {
-		int a=10;
-		int b=0;
-		int value=0;
-		
+	public static void func() {
+		FileInputStream fis =null;
 		try {
-			System.out.println("file open");
-			System.out.println("file using");
-			value=a/b;
+			fis=new FileInputStream("data.txt");
 		}
-		catch(ArithmeticException e) {
-			return -1;
+		
+		catch(IOException e) {
+			System.out.println("x");
+		
 		}
-		System.out.println("file close");
-		return value;
-	}
+		finally {
+			try {
+
+				fis.close();
+
+			}
+			catch(Exception e) {
+				}
+			}
+		}	
 	public static void main(String[] args) {
-		int a=func();
-		System.out.println(a);
-	}
+		func();
+			}
 }
