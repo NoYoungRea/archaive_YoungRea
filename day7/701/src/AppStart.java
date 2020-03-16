@@ -10,9 +10,7 @@ public class AppStart {
 			int a=10/0;
 
 		}
-		catch (Exception e) {
-			//all of them is cetched by here
-		}
+
 		catch(IOException e) {
 			e.printStackTrace();
 			e.printStackTrace();
@@ -20,6 +18,10 @@ public class AppStart {
 		catch(ArithmeticException e) {
 			System.out.println("math");
 			e.printStackTrace();
+		}
+		catch (Exception e) {
+			//all of them is cetched by here
+			//except IOE and Arith
 		}
 		finally {
 			System.out.println(n);
