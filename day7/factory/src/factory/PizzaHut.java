@@ -6,16 +6,7 @@ public class PizzaHut extends PizzaStore{
 		
 	}
 	public Pizza order(String name) {
-		Pizza pizza=null;
-		if(name.equals(BaconPizza.NAME)) {
-			pizza=new BaconPizza();
-		}
-		else if(name.equals(CheesePizza.NAME)) {
-			pizza=new CheesePizza();
-		}
-		else {
-			;
-		}
-		return pizza;
+		return factory.createPizza(name);
 	}
+	//자지가 해야 할 일을 다른 객체에 위임 하는 것을 델리게이션이라 함
 }
