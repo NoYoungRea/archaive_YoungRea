@@ -3,26 +3,27 @@ import java.io.IOException;
 
 public class AppStart {
 	public static void func() {
-		FileInputStream fis =null;
+		FileInputStream fis = null;
 		try {
-			fis=new FileInputStream("data.txt");
+			fis = new FileInputStream("data.txt");
 		}
-		
-		catch(IOException e) {
+
+		catch (IOException e) {
 			System.out.println("x");
-		
+
 		}
 		finally {
-			try {
+		try {
 
 				fis.close();
 
+			} 
+			catch (Exception e) {
 			}
-			catch(Exception e) {
-				}
-			}
-		}	
+		}
+	}
+
 	public static void main(String[] args) {
 		func();
-			}
+	}
 }
